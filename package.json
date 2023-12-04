@@ -6,7 +6,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "cypress run --headed --spec cypress/e2e/MyTests/FinishTests/askona.cy.js --browser chrome",
+        "test": "cypress run --headed --spec cypress/e2e/MyTests/FinishTests/askona.cy.js --browser chrome && node script.js",
+        "generate:report": "mochawesome --reporter mochawesome-report-generator --reporter-options reportDir=cypress/reports,reportFilename=report",
         "posttest": "node script.js"
     },
     "author": "Dmitriy",

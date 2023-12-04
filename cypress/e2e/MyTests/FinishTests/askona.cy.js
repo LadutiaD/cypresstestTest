@@ -10,7 +10,7 @@ describe('askona-Test', () => {
     });
 
     
-    it('url', () => {
+    it.only('url', () => {
         const au = new askonaURL()
             au.visitWebPage();
             au.checkWebPage(); 
